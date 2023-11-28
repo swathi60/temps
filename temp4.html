@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temp4</title>
+    <style>
+        body{background-color: white; width: 100vw; height: 100vh;}
+        .main1{width: 99%; height: 99%; padding: 0.6%; display: grid; grid-template-rows:10% 30% 40% auto ; row-gap: 1%;}
+        .header1{background-color: lawngreen; display: flex; padding: 1%;}
+        .body1{background-color: rgb(212, 220, 212); text-align: center;
+            display: flex; flex-wrap: wrap;justify-content: center; align-content: center;}
+        .body2{background-color: transparent; display: flex; justify-content: space-between;}
+        .footer1{background-color: rgb(55, 56, 55);}
+        .logo{font-size: 4em; color: white; margin-left: 2%;}
+        .list1{display: inline-block; margin-left: 60vw;}
+
+        .header1 ul{list-style-type: none; color: white; display: flex; }
+        .header1 ul li{padding-left:10%;  font-size: 1.5em; }
+        .banner{color: rgb(47, 255, 0);  font-size: 16em;  }
+
+        .box{width: 28%; height: 90%; color: white; text-align: center; margin: 1% 0%;}
+        .body2 h1{font-size: 2.5em;}
+        .body2 p{text-align: justify; margin: 8%; font-size: 1.5em;}
+
+        .footer1{display: flex; justify-content: space-between;}
+        .f1, .f2, .f3{margin: 1vw; width: 25vw; height: auto; color: white;}
+        .logo2{color: white; font-size: 4em;}
+        .f3{font-size: 4em;}
+        .f1 p, .f2 li{font-size: 1.2em;}
+        
+
+
+        @media only screen and (min-width:360px) and (max-width:760px) {
+            .logo{font-size: 1.5em; margin-top: 0.5%;}
+            .header1 ul li{font-size: 0.9em; padding-left: 6%;} 
+            .list1{margin-left: 5vw;}
+            .banner{font-size: 6em;}
+            .box{height: 95%; display: flex; flex-wrap: wrap;}
+            .body2 h1{font-size: 1.2em;}
+            .body2 p{text-align: justify; margin: 3%; font-size: 0.7em;}
+
+            .footer1{display: flex; justify-content:center;}
+            .logo2{color: white; font-size: 1em;}
+            .f3{font-size: 1em;}
+            .f1 p, .f2 li{font-size: 0.75em;}
+        
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="header1">
+            <span class="logo">LOgo</span>
+            <span  class="list1">
+                <ul>
+                    <li>Home</li>
+                    <li>Aboutus</li>
+                    <li>Content</li>
+                    <li>Contact</li>
+                </ul>
+            </span>
+        </div>
+        <div class="body1">
+            <span class="banner">banner</span>
+        </div>
+        <div class="body2">
+            <div class="box" style="background-color: orangered;">
+                <h1>Junk MTV quiz</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur recusandae ut praesentium quaerat assumenda necessitatibus explicabo, provident a quos, excepturi iste hic, vitae ipsam!</p>
+            </div>
+
+            <div class="box" style="background-color: rgb(7, 105, 144)">
+                <h1>vex! FOX nymphs</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur recusandae ut praesentium quaerat assumenda necessitatibus explicabo, provident a quos, excepturi iste hic, vitae ipsam!</p>
+            </div>
+
+            <div class="box" style="background-color: lawngreen">
+                <h1>flock by whe</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur recusandae ut praesentium quaerat assumenda necessitatibus explicabo, provident a quos, excepturi iste hic, vitae ipsam!</p>
+            </div>
+        </div>
+        <div class="footer1">
+            <div class="f1">
+                <span class="logo2">LOgo</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, consectetur.</p>
+            </div>
+            
+            <div class="f2">
+                <ul style="list-style-type: none;">
+                <li>Home</li>
+                <li>Aboutus</li>
+                <li>Connect</li>
+                <li>Contactus</li>
+                </ul>
+            </div>
+            
+            <div class="f3">
+                <p>CALL:9492123402</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

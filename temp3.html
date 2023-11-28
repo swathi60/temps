@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temp3</title>
+    
+    <style>
+        body{background-color: rgb(186, 184, 184);}
+        .main1{   width: 100vw;height: 100vh; display: grid;
+        grid-template-rows: 10% auto;}
+        .body1{background-color: rgb(186, 184, 184); }
+        .head1{display: grid; grid-template-columns: 20vw 80vw;}
+        .logo{ background-color: rgb(95, 94, 93); font-family: 'Courier New', Courier, monospace; font-size: 4em;
+               color: white; padding: 0% 5%;}
+        .menu1{ background-color: rgb(247, 106, 12); }
+        .menu1 ul{list-style-type: none; display: flex; color: white; font-size: 1.7em; }
+        .menu1 ul li{padding-right: 5%;}
+        .subbody{display: grid; height: 100%; grid-template-columns: 30% 30% 30%; justify-content: space-between; }
+        .box{background-color: white; height: 60%; margin: 2% 3%; padding: 2%;}
+
+        .subbody p{ text-align: justify; margin: 5%; font-size: 1.5em; line-height: 220%;}
+        .subbox{ background-color: gainsboro; width: 85%; height: 40%; margin: 5%;}
+
+        
+
+        @media only screen  and  (min-width:360px) and (max-width:760px){
+            
+          .head1{grid-template-columns: 20% 80%;}
+          .logo{font-size: 1.6em;}
+          .menu1 ul{font-size: 1em;}
+          .menu1 ul li{padding-right: 2%;}
+          .box{height: 90%;}
+          .subbody p{font-size: 0.9em; line-height: 150%;}
+        }
+       
+
+    </style>
+
+</head>
+<body>
+    <div class="main1">
+        <div class="head1">
+               <div class="logo">Logo
+
+               </div>
+              
+               <div class="menu1">
+                         <ul>
+                             <li>Home</li>
+                             <li>About us</li>
+                             <li>Products</li>
+                             <li>Contact us</li>
+                         </ul>
+                </div>
+        </div>
+       
+        <div class="body1">
+            <h1 style="margin-left: 10%;">MY PRODUCT</h1>
+            <div class="subbody">
+                 <div class="box">
+                    <div class="subbox"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic quam dignissimos quidem sunt repellendus maiores harum fugiat? Ipsa, at.</p>
+                 </div>
+
+                 <div class="box">
+                    <div class="subbox"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic quam dignissimos quidem sunt repellendus maiores harum fugiat? Ipsa, at.</p>
+                 </div>
+
+                 <div class="box">
+                    <div class="subbox"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic quam dignissimos quidem sunt repellendus maiores harum fugiat? Ipsa, at.</p>
+                 </div>
+                 
+                    
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
